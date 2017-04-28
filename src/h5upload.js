@@ -369,8 +369,8 @@
                             imClient.showerrorInfo("请选择图片上传!");
                             return;
                         }
-                        if (item.size > 1024 * 1024 * 2) {
-                            console.log("图片大于2M，开始进行压缩...");
+                        if (item.size > 1024 * 1024 * 500) {
+                            console.log("图片大于500k，开始进行压缩...");
 
                             (function(img) {
                                 var mpImg = new MegaPixImage(img);
